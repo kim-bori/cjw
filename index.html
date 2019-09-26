@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <link href="css/common.css" type="text/css"/ rel="stylesheet">
+        <link href="css/style.css" type="text/css"/ rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><title>청정원</title>
+    </head>
+    <body>
+        <header>
+            <div class="m_head">
+                <nav class="nav">
+                    <div class="m_nav">
+                        <div class="logo">
+                            <img src="img/mobile_logo.png">
+                        </div>
+                        <a href="#" class="search"><img src="img/search.png"></a>
+                        <a href="#" class="m_gnbBt"><img src="img/menu.png"></a>
+                    </div>
+                    <div class="m_gnb">
+                        <div>
+                            <img src="img/mobile_logo.png">
+                            <a href="#a">로그인이 필요합니다</a>
+                        </div>
+                        <ul class="mobMenu">
+                            <li>
+                                <a href="#">브랜드스토리</a>
+                                <ul class="">
+                                    <li><a href="#">청정원</a></li>
+                                    <li><a href="#">안주야</a></li>
+                                    <li><a href="#">휘슬링쿡</a></li>
+                                    <li><a href="#">츄앤</a></li>
+                                    <li><a href="#">사브작</a></li>
+                                    <li><a href="#">순창</a></li>
+                                    <li><a href="#">카레여왕</a></li>
+                                    <li><a href="#">햇살담은</a></li>
+                                    <li><a href="#">홍초</a></li>
+                                    <li><a href="#">요리에한수</a></li>
+                                    <li><a href="#">맛선생</a></li>
+                                    <li><a href="#">그린스위트</a></li>
+                                    <li><a href="#">제품전체보기</a></li>
+                                    <li><a href="#">TVCF</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">푸드캐스트</a>
+                                <ul class="">
+                                    <li><a href="#">1등급 재료 선택가이드</a></li>
+                                    <li><a href="#">요리로세계일주</a></li>
+                                    <li><a href="#">푸드실험실</a></li>
+                                    <li><a href="#">기본편</a></li>
+                                    <li><a href="#">스페셜편</a></li>
+                                    <li><a href="#">와인푸드페어링</a></li>
+                                    <li><a href="#">식감자극</a></li>
+                                    <li><a href="#">청정원이야기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">푸드노하우</a>
+                                <ul class="">
+                                    <li><a href="#">청정원레시피</a></li>
+                                    <li><a href="#">식탁이 있는 풍경</a></li>
+                                    <li><a href="#">요리공방</a></li>
+                                    <li><a href="#">쿠킹클래스 후기</a></li>
+                                    <li><a href="#">노하우KIT</a></li>
+                                    <li><a href="#">냉장고를 채워줘</a></li>
+                                    <li><a href="#">이달의 식단</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">청정원 SNS</a>
+                                <ul class="">
+                                    <li><a href="#">청정원 페이스북</a></li>
+                                    <li><a href="#">청정원 블로그</a></li>
+                                    <li><a href="#">청정원 인스타그램</a></li>
+                                    <li><a href="#">청정원 트위터</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <a href="#">청정원프렌즈</a>
+                                <ul class="">
+                                    <li><a href="#">정원이의 푸드박스</a></li>
+                                    <li><a href="#">청정원프렌즈 패널</a></li>
+                                    <li><a href="#">푸드에티터 톡</a></li>
+                                    <li><a href="#">청정모임 톡</a></li>
+                                    <li><a href="#">실시간 수다방</a></li>
+                                    <li><a href="#">아이디어 게시판</a></li>
+                                    <li><a href="#">프렌즈 회원등급 가이드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">이벤트</a>
+                                <ul class="">
+                                    <li><a href="#">진행중인 이벤트</a></li>
+                                    <li><a href="#">출서거 이벤트</a></li>
+                                    <li><a href="#">프렌즈전용딜</a></li>
+                                    <li><a href="#">청정원 북카페</a></li>
+                                    <li><a href="#">이벤트 당첨스토리</a></li>
+                                    <li><a href="#">청정원 할인쿠폰</a></li>
+                                    <li><a href="#">청정원 카카오 플친</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    로그인
+                                    <img src="img/logout.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    고객센터
+                                    <img src="img/phone.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dimm"></div>
+                    <script>   
+                        $('.m_gnbBt').on('click',function(){
+                                $('.m_gnb').animate({right:'0%'},'slow');
+                                $('.m_gnb').css('display','block');
+                                $('.dimm').fadeIn();
+                        });
+                            
+                        $('.mobMenu>li>a').on('click',function(){
+                            if($(this).parent().find('ul').css('display')===('none')){
+                                $(this).parent().find('ul').slideDown();
+                                $(this).parent().siblings().find('ul').slideUp();
+                            }else{
+                                $(this).parent().find('ul').slideUp();
+                            }
+                        });
+                        
+                        $('.dimm').on('click',function(){
+                            $('.m_gnb').animate({right:'-60%'},'slow');
+                            $('.dimm').fadeOut();
+                        });                     
+                    </script>
+                </nav>
+            </div>
+            <div class="header">
+                <nav class="p_nav">
+                    <div class="head_top">
+                        <div class="total_search">
+                            <input type="text" title="" value="" id="">
+                            <button><img src="img/search.png"></button>
+                        </div>
+                        <div class="user_box">
+                            <ul>
+                                <li><a href="#b">로그인</a></li>
+                                <li><a href="#b">회원가입</a></li>
+                                <li><a href="#b">고객센터</a></li>
+                                <li><a href="#b">정원e샵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoWrap">
+                        <a href=""><img src="img/logo.png"></a>
+                    </div>
+                    <div class="gnbWrap">
+                        <ul>
+                            <li><a href="#p_bs">브랜드스토리</a></li>
+                            <li><a href="#p_fc">푸드캐스트</a></li>
+                            <li><a href="#p_kh">푸드노하우</a></li>
+                            <li><a href="#sns">청정원 SNS</a></li>
+                            <li><a href="#p_fr">청정원프렌즈</a></li>
+                            <li><a href="#c">이벤트</a></li>
+                        </ul>                        
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="kv">
+                    <div>
+                        <span>푸드</span><span>를 아는 사람들의 </span><span>쿠킹 스튜디오</span>
+                        <p>청정원 요리공방</p>
+                        <span>쿡방, 먹방의 시대를 넘어 모두가 유리를 즐기는 시대!<br>요리공방에서는 가족끼리, 연인끼리 함께할 수 있는 다양한 형태의 쿠킹 클래스가 진행됩니다.</span>
+                    </div>
+                    <button>요리공방 바로가기</button>
+                    <img src="img/mouse.png">
+                </div>
+                <!-- 모바일-->
+                <div class="m_sv">
+                    <ul class="tab">
+                        <li><a href="#tab1" class="active">브랜드 스토리</a></li>
+                        <li><a href="#tab2">푸드캐스트</a></li>
+                        <li><a href="#tab3">푸드노하우</a></li>
+                        <li><a href="#tab4">청정원프렌즈</a></li>
+                    </ul>
+                <script>                    
+                    $(function(){ 
+                        $(".panel>li:not("+$(".tab li a.active").attr("href")+")").hide(); 
+                        $('.tab li a').click(function(){ 
+                             $('.tab li a').removeClass("active"); 
+                             $(this).addClass("active"); 
+                             $('.panel li').hide();
+                             $($(this).attr("href")).show();
+                             return false;
+                            });
+                        });
+                </script>
+                    <ul class="panel">
+                        <li class="m_bs" id="tab1">
+                            <div class="rolling">
+                                <div class="m_slick">
+                                    <div class="savzak">
+                                        <img src="img/smart_logo.png">
+                                        <span>한입에 즐기는 신개념 미트스낵 SAVZAK</span>
+                                        <span>엄선된 원료와 차별화된 제조법으로<br>만들어 더욱 맛있는 프리미엄 영양간식</span>
+                                        <a href="#a">사브작 자세히보기</a>
+                                    </div>
+                                    <div class="anjooya">
+                                        <img src="img/fresh.png">
+                                        <span>청정원<br>안주야(夜)</span>
+                                        <span>가정편의식 안주야로 대표 안주 맛집<br> 스타일을 집에서도 전문점 안주를<br>간편하게 즐길 수 있습니다.</span>
+                                        <a href="#a">안주야 자세히보기</a>
+                                    </div>
+                                    <div class="classic">
+                                        <img src="img/classic.png">
+                                        <span>청정원<br>햇살담은 간장</span>
+                                        <span>진간장? 양조간장?<br>이제 고민 끝! 취향대로 선택하세요.</span>
+                                        <a href="#a">햇살담은 자세히보기</a>
+                                    </div>
+                                    <div class="savzak">
+                                        <img src="img/smart_logo.png">
+                                        <span>한입에 즐기는 신개념 미트스낵 SAVZAK</span>
+                                        <span>엄선된 원료와 차별화된 제조법으로<br>만들어 더욱 맛있는 프리미엄 영양간식</span>
+                                        <a href="#a">사브작 자세히보기</a>
+                                    </div>
+                                    <div class="anjooya">
+                                        <img src="img/fresh.png">
+                                        <span>청정원<br>안주야(夜)</span>
+                                        <span>가정편의식 안주야로 대표 안주 맛집<br>스타일을 집에서도 전문점 안주를<br>간편하게 즐길 수 있습니다.</span>
+                                        <a href="#a">안주야 자세히보기</a>
+                                    </div>
+                                    <div class="classic">
+                                        <img src="img/classic.png">
+                                        <span>청정원<br>햇살담은 간장</span>
+                                        <span>진간장? 양조간장?<br>이제 고민 끝! 취향대로 선택하세요.</span>
+                                        <a href="#a">햇살담은 자세히보기</a>
+                                    </div>                                
+                                </div>
+                                <button type="button" class="slick-pause" aria-label="Pause" style="display: block;"></button>
+                                <script>
+                                $('.m_slick').slick({
+                                    autoplay: true,
+                                    autoplayspeed:5000,
+                                    arrow:false,
+                                    dots:true,
+                                    slidesToShow:2,
+                                    infinite:true,
+                                    slidesToScroll:1,
+                                    responsive: [{
+                                        breakpoint: 768,
+                                        settings: {
+                                            autoplay: true,
+                                            autoplayspeed:5000,
+                                            arrow:false,
+                                            dots:true,
+                                            slidesToShow:2,
+                                            infinite:true,
+                                            slidesToScroll:1,
+                                        }
+                                    }, {
+                                        breakpoint: 640,
+                                        settings: {
+                                            autoplay: true,
+                                            autoplayspeed:5000,
+                                            arrow:false,
+                                            dots:true,
+                                            slidesToShow:1,
+                                            infinite:true,
+                                            slidesToScroll:1,
+                                        }
+                                    }]
+                                });
+                                $('.slick-pause').on('click',function(){
+                                  $('.p_slick').slick('slickPause');
+                                });
+                            </script>
+                            </div>
+                        </li>
+                        <li class="m_fc" id="tab2">
+                            <div class="tit">
+                                <p>푸드캐스트</p>
+                                <div>더 많은 스토리를 보시려면 +</div>
+                            </div>
+                            <div class="con">
+                                <div>
+                                <img src="img/fc_img.jpg">
+                                <p>푸드 실험실 어떻게 삶아야 면발이 가장 쫄깃할까?</p>
+                                </div>
+                                <div class="lab">
+                                    <span>푸드실험실</span>
+                                    <span>[푸드실험실] 꽁꽁 얼어버린 냉동고기 해동법</span>
+                                    <img src="img/ico_next.png">
+                                </div>
+                                <div class="rec">
+                                    <span>보틀레시피</span>
+                                    <span>깨끗하게 소독한 유리병에 샐러드, 냉파스타, 쿠키, 피클 만드는 법을 소개합니다.</span>
+                                    <img src="img/ico_next.png">
+                                </div>
+                            </div>
+                        </li>  
+                        <li class="m_kh" id="tab3">
+                            <div class="tit">
+                                <p>푸드노하우</p>
+                                <div>더 많은 노하우를 보시려면 +</div>
+                            </div>
+                            <div class="con">
+                                <div>
+                                <img src="img/kh_img.jpg">
+                                <p>[식탁이 있는 풍경] 정원人 여러분들의 특별한 요리<br>노하우가 담긴 레시피를 만나보세요</p>
+                                </div>
+                                <div class="cjwrec">
+                                    <span>청정원 레시피</span>
+                                    <span>청정원 쉐프님들의 특별한<br>노하우를 공개합니다!<br>함께 만들어 보아요~</span>
+                                    <img src="img/ico_next.png">
+                                </div>
+                                <div class="eshop">
+                                    <span>정원e샵</span>
+                                    <span>대상의 다양한 제품을 저렴하게</span>
+                                    <img src="img/ico_next.png">
+                                </div>
+                            </div>
+                        </li>  
+                        <li class="m_fr" id="tab4">
+                            <div class="tit">
+                                <p>청정원 프렌즈</p>
+                                <div>청정원 프렌즈 자세히보기 +</div>
+                            </div>
+                            <div class="con">
+                                <div class="foodbox">
+                                    <span>정원이가 청정원 프렌즈<br>여러분을 위해 특별히 준비한<br>정원이의 푸드박스!</span>
+                                    <span>다양하고 푸짐한 청정원 제품을<br>사용하실 수 있는 기회를 놓치지 마세요.</span>
+                                    <button>바로가기</button>
+                                </div>
+                                <div class="pannel">
+                                    <span>정원이의 프렌즈 패널</span>
+                                    <span>직접 사용해보시고 남겨주신 패널's 톡에서 청정원 신제품 정보를 만나세요.</span>
+                                    <img src="img/ico_next.png">
+                                </div>
+                                <div class="editor_t">
+                                    <img src="img/monitor.png">
+                                    <span>푸드 에디터 톡</span>
+                                </div>
+                                <div class="group_t">
+                                    <img src="img/notebook.png">
+                                    <span>청정모임 톡</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 모바일 끝-->
+                <!-- PC -->
+                <div class="p_sv">
+                    <ul class="">
+                        <li class="p_bs" id="p_bs">
+                            <div class="rolling">
+                                <div class="p_slick">
+                                    <div class="savzak">
+                                        <img src="img/smart_logo.png">
+                                        <span>한입에 즐기는 신개념 미트스낵 SAVZAK</span>
+                                        <span>엄선된 원료와 차별화된 제조법으로<br>만들어 더욱 맛있는 프리미엄 영양간식</span>
+                                        <a href="#a">사브작 자세히보기</a>
+                                    </div>
+                                    <div class="anjooya">
+                                        <img src="img/fresh.png">
+                                        <span>청정원<br>안주야(夜)</span>
+                                        <span>가정편의식 안주야로 대표 안주 맛집 스타일을<br>집에서도 간편하게 즐길 수 있습니다.</span>
+                                        <a href="#a">안주야 자세히보기</a>
+                                    </div>
+                                    <div class="classic">
+                                        <img src="img/classic.png">
+                                        <span>청정원<br>햇살담은 간장</span>
+                                        <span>진간장? 양조간장?<br>이제 고민 끝! 취향대로 선택하세요.</span>
+                                        <a href="#a">햇살담은 자세히보기</a>
+                                    </div>
+                                    <div class="savzak">
+                                        <img src="img/smart_logo.png">
+                                        <span>한입에 즐기는 신개념 미트스낵 SAVZAK</span>
+                                        <span>엄선된 원료와 차별화된 제조법으로<br>만들어 더욱 맛있는 프리미엄 영양간식</span>
+                                        <a href="#a">사브작 자세히보기</a>
+                                    </div>
+                                    <div class="anjooya">
+                                        <img src="img/fresh.png">
+                                        <span>청정원<br>안주야(夜)</span>
+                                        <span>가정편의식 안주야로 대표 안주 맛집 스타일을<br>집에서도 간편하게 즐길 수 있습니다.</span>
+                                        <a href="#a">안주야 자세히보기</a>
+                                    </div>
+                                    <div class="classic">
+                                        <img src="img/classic.png">
+                                        <span>청정원<br>햇살담은 간장</span>
+                                        <span>진간장? 양조간장?<br>이제 고민 끝! 취향대로 선택하세요.</span>
+                                        <a href="#a">햇살담은 자세히보기</a>
+                                    </div>                                
+                                </div>
+                                <button type="button" class="slick-pause" aria-label="Pause" style="display: block;"></button>
+                            </div>
+                            <script>
+                                $('.p_slick').slick({
+                                    autoplay: true,
+                                    autoplayspeed: 5000,
+                                    arrow: false,
+                                    dots: true,
+                                    slidesToShow: 3,
+                                    infinite: true,
+                                    slidesToScroll: 1,
+                                    responsive: [{
+                                        /*breakpoint: 1024,
+                                        settings: {
+                                            autoplay: true,
+                                            autoplayspeed: 5000,
+                                            arrow: false,
+                                            dots: true,
+                                            slidesToShow: 2,
+                                            infinite: true,
+                                            slidesToScroll: 1,
+                                        }, */
+                                        breakpoint: 1920,
+                                        settings: {
+                                            autoplay: true,
+                                            autoplayspeed: 5000,
+                                            arrow: false,
+                                            dots: true,
+                                            slidesToShow: 2,
+                                            infinite: true,
+                                            slidesToScroll: 1,
+                                        }
+                                    }]
+                                });
+                                $('.slick-pause').on('click',function(){
+                                  $('.p_slick').slick('slickPause');
+                                });
+                            </script>
+                        </li>
+                        <li class="p_fc" id="p_fc">
+                            <div class="p_fcWrap">
+                                <div class="left">
+                                    <div class="p_tit">
+                                        <span>푸드 캐스트</span>
+                                        <a href="#4">더 많은 스토리를 보시려면 <img src="img/b_plus.png"></a>
+                                    </div>
+                                    <div class="p_lab">
+                                        <span>푸드실험실</span><hr>
+                                        <span>프라이팬에 묻은 기름때<br>확실하게 지우는 법은?</span>
+                                        <a href="#n">바로가기</a>
+                                    </div>
+                                    <div class="p_rec">
+                                        <span>보틀레시피</span><hr>
+                                        <span>깨끗하게 소독한 유리병에<br>샐러드 냉파스타, 비빔밥, 피클,<br>쿠키 만드는 법을 소개합니다.</span>
+                                        <a href="#n">바로가기</a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="fc_slick">
+                                        <div><img src="img/fc1.png"></div>
+                                        <div><img src="img/fc2.png"></div>
+                                        <div><img src="img/fc3.png"></div>
+                                        <div><img src="img/fc4.png"></div>
+                                        <div><img src="img/fc5.png"></div>
+                                    </div>
+                                        <button type="button" class="slick-pause" aria-label="Pause" style="display: block;"></button>
+                                    <script>
+                                        $('.fc_slick').slick({
+                                            autoplay: true,
+                                            dots: true,
+                                            autoplayspeed: 5000,
+                                            arrow: false,
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1                                                
+                                        });
+                                        $('.right .slick-pause').on('click',function(){
+                                            $('.fc_slick').slick('slickPause');
+                                        });
+                                    </script>
+                                    <div class="p_cast">
+                                        <span>푸드캐스트</span><hr>
+                                        <span>[푸드실험실] 꽁꽁 얼어버린 냉동고기 해동법</span>
+                                        <span>얼음인지 고기인지 구분이 안 될 정도로 꽁꽁 얼어버린 고기! 어떤 방법으로 해동시키는게 가장 좋을까요? 냉동고기 해동 방법 노하우!</span>
+                                        <a href="#n">바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>  
+                        <li class="p_kh" id="p_kh">
+                            <div class="p_khWrap">
+                                <div class="left">
+                                    <div class="p_tit">
+                                         <span>푸드 노하우</span>
+                                        <a href="#4">더 많은 노하우를 보시려면 <img src="img/y_plus.png"></a>
+                                    </div>
+                                    <div class="index">
+                                        <ul>
+                                            <li>
+                                                <span>영양정보와 건강식단</span>
+                                                <span>청정원 제품</span>
+                                                <a href="#5"><img src="img/ico_next.png"></a>
+                                            </li>
+                                            <li>
+                                                <span>'기분좋은만남'웹진</span>
+                                                <span>대상 사외보</span>
+                                                <a href="#5"><img src="img/ico_next.png"></a>
+                                            </li>
+                                            <li>
+                                                <span>대상의 다양한 제품을 저렴하게</span>
+                                                <span>정원e샵</span>
+                                                <a href="#5"><img src="img/ico_next.png"></a>
+                                            </li>
+                                            <li>
+                                                <span>다양한 쿠킹클래스</span>
+                                                <span>청정원 요리공방</span>
+                                                <a href="#5"><img src="img/ico_next.png"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="visual">
+                                    </div>
+                                    <div class="special_recipe">
+                                        <span>아주 특별한 레시피</span><hr>
+                                        <span>정원人 여러분들의 특별한 요리<br>노하우가 담긴 레시피를 만나보세요</span>
+                                        <a href="#n">자세히 보기</a>
+                                    </div>
+                                    <div class="cjw_recipe">
+                                        <span>청정원 레시피</span><hr>
+                                        <span>청정원 쉐프님들의 특별한 노하우를<br>공개합니다! 함께 만들어 보아요~</span>
+                                        <a href="#n">자세히 보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>  
+                        <li class="p_fr" id="p_fr">
+                            <div class="p_frWrap">
+                                <div class="left">
+                                    <div class="p_tit">
+                                        <span>청정원 프렌즈</span>
+                                        <a href="#4">더 많은 노하우를 보시려면 <img src="img/y_plus.png"></a>
+                                    </div>
+                                    <div class="foodbox">
+                                        <p>정원이의 푸드박스</p>
+                                        <span>정원이가 청정원 프렌즈<br>여러분을 위해 특별히 준비한<br>정원이의 푸드박스!</span>
+                                        <span>다양하고 푸짐한 청정원 제품을<br>사용하실 수 있는 기회를 놓치지 마세요.</span>
+                                        <button>바로가기</button>
+                                    </div>
+                                </div>
+                                <div class="right"> 
+                                    <div class="fr_panel">
+                                        <span>정원이의 프렌즈 채널</span>
+                                        <span>직접 사용해보시고 남겨주신<br>패널's 톡에서 청정원 신제품<br>정보를 만나세요.</span>
+                                        <a href="#n">바로가기</a>
+                                    </div>
+                                    <div class="fr_editorT">
+                                        <img src="img/monitor.png">
+                                         <span>푸드 에디터 톡</span>
+                                        <span>활발하게 활동중인 SNS푸드 에디터 분들의<br>후기를 모았습니다.</span>
+                                    </div>
+                                    <div class="fr_groupT">
+                                        <img src="img/notebook.png">
+                                         <span>청정모임 톡</span>
+                                        <span>청정모임톡 후기를 모았습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- PC 끝-->
+                <!--공통 SNS-->
+                <div class="sns" id="sns">
+                    <div class="tit">
+                        <p>청정원 SNS</p>
+                        <span>청정원의 생생한 푸드이야기를 만나보세요</span>
+                        <ul>
+                            <li><a href="#a"><img src="img/fb.png"></a></li>
+                            <li><a href="#a"><img src="img/ks.png"></a></li>
+                            <li><a href="#a"><img src="img/nb.png"></a></li>
+                            <li><a href="#a"><img src="img/tw.png"></a></li>
+                            <li><a href="#a"><img src="img/is.png"></a></li>
+                            <li><a href="#a"><img src="img/yt.png"></a></li>
+                        </ul>
+                    </div>
+                    <div class="con">
+                        <div class="blog">
+                            <div class="nb_img"></div>
+                            <div class="text">
+                                <span>네이버블로그</span>
+                                <p>호로록~ 맛있는 국물요리 추천! 굴 미역국 맛있게 끓이는 법 - 겨울철 저녁 메뉴 추천, 입맛 돋구는 굴을 이용한 미역국! 청정원에서 알려드리는 레시피를 따라해보세요.</p>
+                                <img src="img/nb.png">
+                            </div>
+                        </div>
+                        <div class="fb">
+                            <div class="text">
+                                <span>페이스북</span>
+                                <p>이런 도시락이라면 대.찬.성@_이렇게 싸줄 사랑스러운 내 친구를 소개합니다~ #보고 #배우자 #꽃김밥</p>
+                                <img src="img/fb.png">
+                            </div>
+                            <div class="fb_img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul class="fMenu">
+                <li><a>FAMILY SITE</a></li>
+                <li><a>개인정보취급방침</a></li>
+                <li><a>이용약관</a></li>
+                <li><a>이메일무단수집거부</a></li>
+                <li><a>공지사항</a></li>
+                <li><a>뉴스레터신청</a></li>
+                <li><a>사이트맵</a></li>
+                <li><img src="img/footmark1.png"><a>소비자중심 경영</a></li>
+                <li><img src="img/footmark2.png"><a>브랜드 이노베이션 대상</a></li>
+            </ul>
+            <div class="mTablet">
+                <img src="img/f_logo.png">
+                <p>제품관련 고객상담 080-019-9119 | 웹사이트문의 02-220-9781<br>상담시간 평일 09:00~17:30 (토, 일요일, 공휴일 휴무)</p>
+            </div>
+            <div class="tablet">
+                <img src="img/f_logo.png">
+                <ul class="info">
+                    <li>
+                        <span>대상㈜</span>
+                        <span>사업자등록번호 109-81-14886</span>
+                        <span>대표이사 임정배, 정홍언</span><br>
+                        <span>주소 서울특별시 동대문구 천호대로 26(신설동) 대상빌딩</span>
+                        <span>제품관련 고객상담 080-019-9119</span><br>
+                        <span>웹사이트문의 02-220-9781</span>
+                        <span>상담시간 평일 09:00~17:30 (토, 일요일, 공휴일 휴무)</span>
+                    </li>
+                    <li>
+                        COPYRIGHT 청정원커뮤니티.ALL RIGHT RESERVED.
+                    </li>
+                </ul>
+            </div>
+            <div class="cr">COPYRIGHT 청정원커뮤니티.ALL RIGHT RESERVED.</div>
+            <div class="mark">
+                <img src="img/footmark1_p.png">
+                <img src="img/footmark2_p.png">
+            </div>
+        </footer>
+    </body>
+</html>
